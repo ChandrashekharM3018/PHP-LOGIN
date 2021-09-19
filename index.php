@@ -1,10 +1,9 @@
 <?php 
-
-  session_start(); /* Starts the session */
-
-  if($_SESSION['Active'] == false){ /* Redirects user to Login.php if not logged in */
+  session_start();
+  if($_SESSION['Active'] == false)
+  {
     header("location:login.php");
-	  exit;
+    exit;
   }
 ?>
 
